@@ -1,5 +1,5 @@
 
-#include "lib/libvector.h"
+#include "../inc/libvector.h"
 
 using namespace std;
 

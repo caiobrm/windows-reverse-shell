@@ -14,9 +14,9 @@ LDFLAGS		:= -pthread -lm -lrt -l:librobotcontrol.so.1
 OBJ_DIR 	:= obj
 INIT_DIR 	:= init
 
-SOURCES		:= $(shell find /OnBoardComp/src -name "*.cpp")
-INCLUDES	:= $(shell find /OnBoardComp/src -name "*.h")
-OBJECTS		:= $(SOURCES:$%.cpp=$%.o)
+SOURCES		:= $(shell find ../src -name "*.cc")
+INCLUDES	:= $(shell find ../src -name "*.h")
+OBJECTS		:= $(SOURCES:$%.cc=$%.o)
 
 prefix		:= /usr/local
 RM		:= rm -f
